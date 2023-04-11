@@ -9,10 +9,17 @@ import Statistics from "./components/Statistics/Statistics";
 import Blog from "./components/Blog/Blog";
 import Applied from "./components/Applied/Applied";
 
+import Main from "./components/Main/Main";
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/",
+    element: <Main />,
     errorElement: <ErrorPage />,
     children: [
       {
