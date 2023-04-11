@@ -20,7 +20,7 @@ const Feature = ({ feature }) => {
         <p>Salary : {salary}</p>
       </div>
 
-      <Link to="/details" onClick={() => showDetails(id)}>
+      <Link to="/details">
         <Button>View Details</Button>
       </Link>
     </div>
