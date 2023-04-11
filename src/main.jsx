@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
@@ -10,6 +10,12 @@ import Blog from "./components/Blog/Blog";
 import Applied from "./components/Applied/Applied";
 import Main from "./components/Main/Main";
 import Details from "./components/Details/Details";
+import { showDetails } from "./loder";
+
+// const [] = useState([]);
+// fetch("jobFeature.json")
+//   .then((res) => res.json())
+//   .then((data) => console.log(data));
 
 const router = createBrowserRouter([
   {
@@ -36,8 +42,8 @@ const router = createBrowserRouter([
       },
       {
         path: "details",
+        // loader: showDetails,
         element: <Details />,
-        loader: () => fetch("jobFeature.json"),
       },
     ],
   },
