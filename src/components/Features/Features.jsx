@@ -9,11 +9,11 @@ const Features = () => {
       .then((features) => setFeatures(features));
   }, []);
   return (
-    <div className="My-Container grid md:grid-cols-2 gap-10">
+    <section className="My-Container grid md:grid-cols-2 gap-10">
       {features.map((feature) => (
         <Feature feature={feature} key={feature.id} />
       ))}
-    </div>
+    </section>
   );
 };
 

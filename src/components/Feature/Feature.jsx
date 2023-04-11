@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 
 const Feature = ({ feature }) => {
   const { id, logo, title, company, category1, category2, salary, location } =
@@ -17,7 +18,10 @@ const Feature = ({ feature }) => {
         <p>{location}</p>
         <p>Salary : {salary}</p>
       </div>
-      <Button>View Details</Button>
+
+      <Link to="/details">
+        <Button>View Details</Button>
+      </Link>
     </div>
   );
 };
