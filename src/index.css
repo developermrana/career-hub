@@ -22,3 +22,7 @@
 .My-Container {
   @apply px-3 md:px-24 max-w-screen-xl mx-auto;
 }
+
+.btn {
+  @apply text-[#9774FF] fw500 border border-[#9774FF]  px-5 py-1 rounded;
+}
