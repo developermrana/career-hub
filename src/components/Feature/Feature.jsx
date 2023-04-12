@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
-import { showDetails } from "../../loder";
 
 const Feature = ({ feature }) => {
   const { id, logo, title, company, category1, category2, salary, location } =

@@ -1,18 +1,13 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header/Header";
-import SectionTitle from "./components/SectionTitle/SectionTitle";
-import JobCategory from "./components/JobCategory/JobCategory";
-import Features from "./components/Features/Features";
+import Navbar from "./components/Navbar/Navbar";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <SectionTitle title="Job Category List" />
-      <JobCategory />
-      <SectionTitle title="Featured Jobs" />
-      <Features />
+      <Navbar />
+      <Outlet />
     </div>
   );
 }
