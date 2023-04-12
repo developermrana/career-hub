@@ -1,9 +1,10 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 const Details = () => {
   const data = useLoaderData();
   const {
+    id,
     description,
     responsibility,
     education,
@@ -60,9 +61,11 @@ const Details = () => {
           <p>
             <span className="fw700">Address :</span> {location}
           </p>
-          <button className="block py-4 bg-[#828CFE] w-full text-white fw800 rounded">
-            Apply Now
-          </button>
+          <Link to="/applied">
+            <button className="block py-4 bg-[#828CFE] w-full text-white fw800 rounded">
+              Apply Now
+            </button>
+          </Link>
         </div>
       </div>
     </section>
