@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
+import showDetails from "../../loder";
 
 const Feature = ({ feature }) => {
   const { id, logo, title, company, category1, category2, salary, location } =
@@ -19,7 +20,7 @@ const Feature = ({ feature }) => {
         <p>Salary : {salary}</p>
       </div>
 
-      <Link to="/details">
+      <Link to={`/details/${id}`}>
         <Button>View Details</Button>
       </Link>
     </div>

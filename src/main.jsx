@@ -10,6 +10,7 @@ import Blog from "./components/Blog/Blog";
 import Applied from "./components/Applied/Applied";
 import Details from "./components/Details/Details";
 import Home from "./components/Home/Home";
+import showDetails from "./loder";
 
 const router = createBrowserRouter([
   {
@@ -33,9 +34,11 @@ const router = createBrowserRouter([
         path: "blog",
         element: <Blog />,
       },
+
       {
-        path: "details",
+        path: "/details/:id",
         element: <Details />,
+        loader: ({ params }) => showDetails(params.id),
       },
     ],
   },

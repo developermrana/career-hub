@@ -3,6 +3,7 @@ import Feature from "../Feature/Feature";
 
 const Features = () => {
   const [features, setFeatures] = useState([]);
+
   useEffect(() => {
     fetch("jobFeature.json")
       .then((res) => res.json())
